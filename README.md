@@ -1,5 +1,5 @@
 ## Welcome to GitHub Pages
 
-[Template v1](https://iciobanu-freelace.github.io/ct/v1).
+[Template v1](https://iciobanu-freelace.github.io/ct/templates/v1).
 
-[Template v1](https://iciobanu-freelace.github.io/ct/v2).
+[Template v2](https://iciobanu-freelace.github.io/ct/templates/v2).
