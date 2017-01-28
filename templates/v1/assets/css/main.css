@@ -115,7 +115,7 @@ a:hover {
 #hero-area {
   /*background: #34495e;*/
   color: #fff;
-  background: url("../img/hero/bg.png") no-repeat center center fixed;
+  background: url("../img/hero/bg1.png") no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -148,10 +148,30 @@ a:hover {
 .portfolio-item {
   position: relative;
   margin-bottom: 15px;
+  background: #292c2f ;
+
 }
+
+.portfolio-item h4,
+.portfolio-item h6{
+  color:#FFF;
+  padding: 0 25px;
+}
+.portfolio-item h6{
+  padding-bottom: 10px;
+}
+.portfolio-item .img-wrap{
+  height: 226px;
+  overflow: hidden;
+
+}
+
 .portfolio-item img {
   width: 100%;
+
 }
+
+
 .portfolio-item .overlay {
   position: absolute;
   top: 0;
@@ -188,9 +208,13 @@ a:hover {
 #clients {
   background: #fff;
 }
+
+#clients img{
+  max-height: 100px;
+}
 #about {
   /*background: #34495e;*/
-  background: url("../img/about/about.png") no-repeat center center fixed;
+  background: url("../img/about/about2.png") no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -292,6 +316,9 @@ a:hover {
 #copyright a {
   color: #333;
 }
+
+
+
 
 /* ========================================================================
   2.14 Component: Map
