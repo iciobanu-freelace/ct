@@ -35,6 +35,10 @@ a {
 a:hover {
   color: #e76c3c;
 }
+h1{
+  color : #FF0000;
+}
+
 .row {
   padding: 80px 0px;
 }
@@ -48,17 +52,22 @@ a:hover {
   border-radius: 0;
 }
 .btn-common {
-  background: #3d566e;
+  background: #428bca;
   color: #fff;
 }
 .btn-common:hover {
-  background: #e74c3c;
+  background: #FF0000;
   color: #fff;
+}
+
+.btn-primary{
+  background:#1320f1;
 }
 
 .title {
   text-align: center;
   font-size: 50px;
+
 }
 .subtitle {
   text-align: center;
@@ -98,6 +107,7 @@ a:hover {
   font-size: 25px;
   color: #fff;
   font-weight: 100;
+  padding: 0;
 }
 .navbar-default .navbar-brand:hover {
   color: #eee;
@@ -110,7 +120,7 @@ a:hover {
   background: #333;
 }
 .affix.navbar-default {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(66, 139, 202, 0.8);
 }
 #hero-area {
   /*background: #34495e;*/
@@ -122,6 +132,24 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#hero-area1{
+  background: url("../img/about/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+}
+
+#hero-area1 h1.title{
+  color:#FFF;
+}
+
+#hero-area h1.title{
+  color:#FFF;
+}
+
 #hero-area .btn {
   margin-right: 20px;
 }
@@ -142,7 +170,7 @@ a:hover {
 }
 /*Portfolio*/
 #portfolio {
-  background: #f1f1f1;
+  background:#fff;
 }
 /*Portfolio Overlay */
 .portfolio-item {
@@ -206,12 +234,21 @@ a:hover {
   color: #e74c3c;
 }
 #clients {
-  background: #fff;
+  background: #f1f1f1;
 }
 
 #clients img{
   max-height: 100px;
 }
+
+#partners {
+  background:  #f1f1f1;
+}
+
+#partners div.logo-wrp{
+  height: 80px;
+}
+
 #about {
   /*background: #34495e;*/
   background: url("../img/about/about2.png") no-repeat center center fixed;
@@ -222,6 +259,8 @@ a:hover {
   background-size: cover;
   color: #fff;
 }
+
+
 #about p {
   line-height: 30px;
   font-size: 17px;
@@ -249,7 +288,7 @@ a:hover {
   width: 50px;
   height: 50px;
   vertical-align: middle;
-  background: #34495e;
+  background: #428bca;
 }
 #contact .social .social-links a:hover {
   color: #fff;
@@ -333,7 +372,7 @@ a:hover {
 ===========================*/
 
 .footer-distributed{
-  background-color: #292c2f;
+  background-color: #428bca;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -386,7 +425,7 @@ a:hover {
 }
 
 .footer-distributed .footer-company-name{
-  color:  #8f9296;
+  color:  #fff;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -399,8 +438,10 @@ a:hover {
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #33383b;
+  /*background-color:  #33383b;*/
   color: #ffffff;
+  border-color: #fff;
+  border-width: thin;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -431,7 +472,7 @@ a:hover {
 }
 
 .footer-distributed .footer-center p a{
-  color:  #5383d3;
+  color:  #FFF;
   text-decoration: none;;
 }
 
@@ -444,7 +485,7 @@ a:hover {
 
 .footer-distributed .footer-company-about{
   line-height: 20px;
-  color:  #92999f;
+  color:  #FFF;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -467,7 +508,7 @@ a:hover {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color:  #33383b;
+  /*background-color:  #33383b;*/
   border-radius: 2px;
 
   font-size: 20px;
