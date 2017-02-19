@@ -2,7 +2,7 @@
 ### Laravel template
 vendor/
 node_modules/
-
+backend/
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/
@@ -36,7 +36,7 @@ storage/*.key
 # Gradle:
 .idea/gradle.xml
 .idea/libraries
-
+git add
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml
 
