@@ -1,8 +1,11 @@
 //Contact Form
-$(document).ready(function () {
-    $('#submit').click(function () {
+$(document).ready(function ()
+{
+    $('#submit').click(function ()
+    {
 
-        $.post("assets/php/send.php", $(".contact-form").serialize(), function (response) {
+        $.post("assets/php/send.php", $(".contact-form").serialize(), function (response)
+        {
             $('#success').html(response);
         });
         return false;
@@ -15,9 +18,11 @@ $(document).ready(function () {
      ========================================================================== */
     google.maps.event.addDomListener(window, 'load', init);
 
-    function init() {
+    function init()
+    {
 
-        var myLatlng = new google.maps.LatLng(47.038860, 28.825564);
+        var latlng =[47.038860, 28.825564];
+         var myLatlng = new google.maps.LatLng(latlng[0], latlng[1]);
         var mapOptions = {
             zoom: 15,
             scrollwheel: false,
@@ -58,15 +63,56 @@ $(document).ready(function () {
                 featureType: "water",
                 elementType: "geometry",
                 stylers: [{hue: "#ffff00"}, {lightness: -25}, {saturation: -97}]
-            }],
+            }]
         };
         var mapElement = document.getElementById('map-container');
         var map = new google.maps.Map(mapElement, mapOptions);
 
+
+        var data = {
+            logo: 'assets/img/logo/logo-vg.png',
+            title: 'S.C. “Vectro Grup” S.R.L.',
+            city: 'RM, 2004, or. Chisinău',
+            street: 'str. Columna 170/3',
+            phone: '(3732) 519880',
+            mail: 'vectrogrup.md@mail.ru',
+            goto: 'https://maps.google.com/maps?ll=' + latlng.join(',')
+        }
+
+
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            title: 'KreFolio!'
+            draggable: false,
+            optimized: false,
+            html: '<div class="map-window">' +
+            '<a href="' + data.goto + '">' + data.title + '</a>' +
+            '<div class="window">' +
+            '<div class="pull-left">' +
+            '<div class="img-map">' +
+            '<img class="logo" src="' + data.logo + '">' +
+            '</div>' +
+            '</div>' +
+            '<div class="pull-right">' +
+            '<p class="icon-address">' + data.city + '</p>' +
+            '<p class="icon-address">' + data.street + '</p>' +
+            '<p class="icon-phone">' + data.phone + '</p>' +
+            '<p class="icon-mail">' + data.mail + '</p>' +
+            '</div>' +
+            '</div>' +
+            '</div>'
         });
+
+        infowindow = new google.maps.InfoWindow();
+        map.addListener('zoom_changed', function ()
+        {
+            infowindow.close();
+        });
+        google.maps.event.addListener(marker, "click", function ()
+        {
+            infowindow.open(map, marker);
+        });
+        infowindow.setContent(marker.html);
+        infowindow.open(map, marker);
     }
 })
