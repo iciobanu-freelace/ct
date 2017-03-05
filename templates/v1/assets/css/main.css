@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* BEGIN Regular */
 @font-face {
@@ -36,8 +37,13 @@ a {
     transition: all 0.2s linear;
 }
 
-a:hover {
+
+a:hover,a .btn:hover {
     color: #333333;
+}
+
+a:focus, a.btn:focus{
+    color : #fff;
 }
 
 h1 {
@@ -72,9 +78,10 @@ h1 {
     background: #000080;
 }
 
-.title {
+h1.title {
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
+    color: #bdc3c7;
 
 }
 
@@ -83,7 +90,7 @@ h1 {
     font-weight: 100;
     padding-bottom: 30px;
     position: relative;
-    color: #bdc3c7;
+    color: #3d566e;
 }
 
 .navbar {
@@ -185,12 +192,18 @@ h1 {
 
 #hero-area p.top-head {
     font-size: 40px;
+    font-family: Roboto;
 }
 
 #services h3 {
     font-size: 28px;
     color: #000080;
-    margin: 0;
+    height: 60px;
+    margin: 0 0 10px 0px;
+
+}
+#services .service-item p{
+    font-size: 16px;
 }
 
 /*Portfolio*/
@@ -432,11 +445,11 @@ h1 {
 .map-window a{
     font-size: 20px;
     font-weight: bold;
-    text-decoration: :none;
+    text-decoration :none;
     padding-bottom: 5px;
 }
 .map-window a:hover{
-    text-decoration: :none;
+    text-decoration: none;
 }
 
 .map-window img.logo {
