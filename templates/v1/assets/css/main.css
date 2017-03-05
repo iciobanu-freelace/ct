@@ -30,7 +30,7 @@ body {
 
 a {
     color: #333333;
-    font-weight: bold,
+    font-weight: bold;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
