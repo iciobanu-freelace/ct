@@ -202,7 +202,9 @@ h1.title {
     margin: 0 0 10px 0px;
 
 }
-
+#partners .service-item{
+    padding-bottom: 10px;
+}
 #services .service-item p {
     font-size: 16px;
 }
@@ -307,6 +309,10 @@ h1.title {
     padding: 40px 0;
 }
 
+#clients .clients-item p{
+    text-align: center;
+    padding-top: 10px;
+}
 #partners {
     background: #f1f1f1;
 }
