@@ -3,11 +3,11 @@ $(document).ready(function ()
 {
     $('#submit').click(function ()
     {
-
         $.post("assets/php/send.php", $(".contact-form").serialize(), function (response)
         {
             $('#success').html(response);
         });
+
         return false;
 
     });
@@ -20,9 +20,8 @@ $(document).ready(function ()
 
     function init()
     {
-
-        var latlng =[47.038860, 28.825564];
-         var myLatlng = new google.maps.LatLng(latlng[0], latlng[1]);
+        var latlng = [47.038860, 28.825564];
+        var myLatlng = new google.maps.LatLng(latlng[0], latlng[1]);
         var mapOptions = {
             zoom: 15,
             scrollwheel: false,
@@ -74,7 +73,7 @@ $(document).ready(function ()
             title: 'S.C. “Vectro Grup” S.R.L.',
             city: 'RM, 2004, or. Chisinău',
             street: 'str. Columna 170/3',
-            phone: '(3732) 519880',
+            phone: '(373) 22 51 98 80',
             mail: 'vectrogrup.md@mail.ru',
             goto: 'https://maps.google.com/maps?ll=' + latlng.join(',')
         }

@@ -37,20 +37,21 @@ a {
     transition: all 0.2s linear;
 }
 
-
-a:hover,a .btn:hover {
+a:hover, a .btn:hover {
     color: #333333;
 }
 
-a:focus, a.btn:focus{
-    color : #fff;
+a:focus, a.btn:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
 }
 
 h1 {
     color: #3d566e;
 }
 
-.row {
+.landing .row, .page-about #hero-area1 .row {
     padding: 80px 0px;
 }
 
@@ -153,8 +154,7 @@ h1.title {
 #hero-area {
     /*background: #34495e;*/
     color: #fff;
-    background: url("../img/hero/bg1.png") no-repeat center center fixed;
-
+    background: url("../img/hero/bg1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -162,7 +162,7 @@ h1.title {
 }
 
 #hero-area1 {
-    background: url("../img/about/bg.png") no-repeat center center fixed;
+    background: url("../img/about/bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -202,8 +202,22 @@ h1.title {
     margin: 0 0 10px 0px;
 
 }
-#services .service-item p{
+
+#services .service-item p {
     font-size: 16px;
+}
+
+#services .service-item img {
+    width: 200px;
+}
+
+#services .service-item h4::after {
+    position: absolute;
+    width: 65px;
+    height: 1px;
+    background-color: #f58427;
+    display: block;
+    bottom: 0;
 }
 
 /*Portfolio*/
@@ -303,7 +317,7 @@ h1.title {
 
 #about {
     /*background: #34495e;*/
-    background: url("../img/about/about2.png") no-repeat center center fixed;
+    background: url("../img/about/bg1.jpg") no-repeat center center fixed;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -442,13 +456,15 @@ h1.title {
     table-layout: fixed;
     max-width: 350px;
 }
-.map-window a{
+
+.map-window a {
     font-size: 20px;
     font-weight: bold;
-    text-decoration :none;
+    text-decoration: none;
     padding-bottom: 5px;
 }
-.map-window a:hover{
+
+.map-window a:hover {
     text-decoration: none;
 }
 
