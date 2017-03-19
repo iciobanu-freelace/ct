@@ -320,7 +320,10 @@ h1.title {
 #partners div.logo-wrp {
     height: 80px;
 }
-
+.page-more p {
+    line-height: 30px;
+    font-size: 17px;
+}
 #about {
     /*background: #34495e;*/
     background: url("../img/about/bg1.jpg") no-repeat center center fixed;
